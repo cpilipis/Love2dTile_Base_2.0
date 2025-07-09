@@ -46,7 +46,7 @@ end
 --Because I am nice, I will allow players to check if their ent is being clicked with one simple function
 function entity.checkForMouseDown(table)
 if table ~= nil then
-if love.mouse.getX() > table.x and love.mouse.getX() < table.x + table.width and love.mouse.getY() > table.y and love.mouse.getY() < table.y + table.height and love.mouse.isDown("l") == true then
+if love.mouse.getX() > table.x and love.mouse.getX() < table.x + table.width and love.mouse.getY() > table.y and love.mouse.getY() < table.y + table.height and love.mouse.isDown(1) == true then
 return true
 else
 return false

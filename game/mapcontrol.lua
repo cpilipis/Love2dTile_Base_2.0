@@ -199,7 +199,7 @@ love.graphics.setColor(255,255,255)
     local row = TileTable[rowIndex]
     for columnIndex=1, #row do
       local number = row[columnIndex]
-      love.graphics.drawq(Tileset, Quads[number], (columnIndex-1)*TileW, (rowIndex-1)*TileH)
+      love.graphics.draw(Tileset, Quads[number], (columnIndex-1)*TileW, (rowIndex-1)*TileH)
     end
   end
 love.graphics.print("Press 1 to go to this map, Press 2 to go to an obstacle course, and press 3 to venture into the void . . . " , 0, 0)
